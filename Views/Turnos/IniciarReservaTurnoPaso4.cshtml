@@ -1,0 +1,97 @@
+﻿@model WebAplicacionTurnos.Models.ReservaTurno
+
+<div class="tab-content">
+	<div id="paso4" class="tab-pane fade show active">
+		<h3>Paso 4: Confirmación de los datos ingresados.</h3>
+
+		<fieldset class="mb-4">
+			<legend>Datos de Contacto</legend>
+			<dl class="row">
+				<dt class="col-sm-2">
+					@Model.Cliente.Apellido
+				</dt>
+				<dd class="col-sm-10">
+					@Model.Cliente.Apellido
+				</dd>
+
+				<dt class="col-sm-2">
+					@Model.Cliente.Nombre
+				</dt>
+				<dd class="col-sm-10">
+					@Model.Cliente.Nombre
+				</dd>
+
+				<dt class="col-sm-2">
+					Fecha de nacimiento
+				</dt>
+				<dd class="col-sm-10">
+					@Model.Cliente.FechaNacimiento?.ToString("d")
+				</dd>
+
+				<dt class="col-sm-2">
+					Tipo documento
+				</dt>
+				<dd class="col-sm-10">
+					@Model.Cliente.TipoDocumento
+				</dd>
+
+				<dt class="col-sm-2">
+					Número documento
+				</dt>
+				<dd class="col-sm-10">
+					@Model.Cliente.NumeroDocumento
+				</dd>
+
+				<dt class="col-sm-2">
+					Correo Electrónico
+				</dt>
+				<dd class="col-sm-10">
+					@Model.Cliente.CorreoElectronico
+				</dd>
+
+				<dt class="col-sm-2">
+					@Model.Cliente.Celular
+				</dt>
+				<dd class="col-sm-10">
+					@Model.Cliente.Celular
+				</dd>
+			</dl>
+		</fieldset>
+
+		<fieldset class="mb-4">
+			<legend>Datos de Tipo de Servicio y Servicio</legend>
+			<dl class="row">
+				<dt class="col-sm-2">
+					<label asp-for="TipoServicioDescripcion"></label>
+				</dt>
+				<dd class="col-sm-10">
+					<input asp-for="TipoServicioDescripcion" class="form-control" id="TipoServicioDescripcion" type="text" readonly />
+				</dd>
+				<dt class="col-sm-2">
+					<label asp-for="ServicioDescripcion"></label>
+				</dt>
+				<dd class="col-sm-10">
+					<input asp-for="ServicioDescripcion" class="form-control" id="ServicioDescripcion" type="text" readonly />
+				</dd>
+			</dl>
+		</fieldset>
+
+		<fieldset class="mb-4">
+			<legend>Datos de Fecha y Hora</legend>
+			<dl class="row">
+				<dt class="col-sm-2">
+					<label asp-for="FechaTurno" class="control-label"></label>
+				</dt>
+				<dd class="col-sm-10">
+					<input asp-for="FechaTurno" class="form-control" id="FechaTurno" type="text" readonly />
+				</dd>
+				<dt class="col-sm-2">
+					<label asp-for="HoraTurno" class="control-label"></label>
+				</dt>
+				<dd class="col-sm-10">
+					<input asp-for="HoraTurno" class="form-control" id="HoraTurno" type="time" readonly />
+				</dd>
+			</dl>
+		</fieldset>
+	</div>
+</div>

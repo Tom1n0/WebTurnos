@@ -1,0 +1,205 @@
+﻿@model IEnumerable<WebAplicacionTurnos.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Clientes";
+}
+<head>
+    <link href="css/tabla.css" rel="stylesheet" />
+</head>
+<h1>Clientes</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Agregar nuevo cliente</a>
+</p>
+<hr />
+<div class="container mt-4">
+    <div class="row justify-content-start">
+        <div class="col-md-5">
+            <form asp-action="Index" method="get">
+                <dl class="row">
+                    <dt class="col-sm-2">
+                        <label for="apellido">Apellido:</label>
+                    </dt>
+                    <dd class="col-sm-10">
+                        <input type="text" id="apellido" name="apellido" value="@ViewBag.Apellido" />
+                        <button type="button" class="btn btn-danger btn-sm ml-2 clear-input">X</button>
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        <label for="nombre">Nombre:</label>
+                    </dt>
+                    <dd class="col-sm-10">
+                        <input type="text" id="nombre" name="nombre" value="@ViewBag.Nombre" />
+                        <button type="button" class="btn btn-danger btn-sm ml-2 clear-input">X</button>
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        <label for="numeroDocumento">Número Documento:</label>
+                    </dt>
+                    <dd class="col-sm-10">
+                        <input type="text" id="numeroDocumento" name="numeroDocumento" value="@ViewBag.numeroDocumento" />
+                        <button type="button" class="btn btn-danger btn-sm ml-2 clear-input">X</button>
+                    </dd>
+
+                    <dt class="col-sm-2"></dt>
+                    <dd class="col-sm-10">
+                        <!-- Botón de búsqueda y botón para limpiar todos los campos -->
+                        <input type="submit" value="Buscar" class="btn btn-success" />
+                        <button type="button" id="clearAllInputs" class="btn btn-secondary">Limpiar todos</button>
+                    </dd>
+                </dl>
+            </form>
+        </div>
+    </div>
+</div>
+<hr />
+<br />
+<br />
+<body>
+    <div id="main-container">
+    <table>
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Celular)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoDocumento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroDocumento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaNacimiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CorreoElectronico)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Altura)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Barrio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Partido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CuitCuil)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RazonSocial)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Localidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Provincia)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+            <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Celular)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoDocumento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroDocumento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaNacimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CorreoElectronico)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Calle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Altura)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Barrio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Partido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CuitCuil)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RazonSocial)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Localidad.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Provincia.Descripcion)
+            </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.ClienteId" class="btn btn-sm btn-warning" title="Editar">
+                                <i class="fas fa-edit">Editar</i>
+                            </a>
+                            <a asp-action="Details" asp-route-id="@item.ClienteId" class="btn btn-sm btn-info" title="Detalle">
+                                <i class="fas fa-info-circle">Detalle</i>
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.ClienteId" class="btn btn-sm btn-danger" title="Eliminar">
+                                <i class="fas fa-trash">Eliminar</i>
+                            </a>
+                        </td>
+        </tr>
+}
+    </tbody>
+</table>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // Función para borrar el contenido de un campo de entrada individual al hacer clic en el botón "X"
+        $(".clear-input").click(function () {
+            // Busca el campo de entrada anterior (hermano anterior) y borra su contenido
+            $(this).prev('input').val('');
+        });
+    });
+
+    $(document).ready(function () {
+        //Función para borrar el contenido de todos los campos de entrada al hacer clic en el botón "Limpiar todos"
+        $('#clearAllInputs').click(function () {
+            // Limpia los campos de Apellido, Nombre y Número de Documento
+            $('#apellido').val('');
+            $('#nombre').val('');
+            $('#numeroDocumento').val('');
+        });
+    });
+
+</script>
+

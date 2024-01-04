@@ -1,0 +1,49 @@
+﻿@model IEnumerable<WebAplicacionTurnos.Models.TiposServicio>
+
+@{
+    ViewData["Title"] = "Tipos de servicios";
+}
+<head>
+
+    <link href="css/tabla.css" rel="stylesheet" />
+</head>
+
+<h1>Tipos de servicios</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Agregar nuevo tipo de servicio</a>
+</p>
+<body>
+    <div id="main-container">
+<table class="table-tipos-servicios">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.TipoServicioId" class="btn btn-sm btn-warning" title="Editar">
+                                <i class="fas fa-edit">Editar</i>
+                            </a>
+                            <a asp-action="Details" asp-route-id="@item.TipoServicioId" class="btn btn-sm btn-info" title="Detalle">
+                                <i class="fas fa-info-circle">Detalle</i>
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.TipoServicioId" class="btn btn-sm btn-danger" title="Eliminar">
+                                <i class="fas fa-trash">Eliminar</i>
+                            </a>
+                        </td>
+        </tr>
+}
+    </tbody>
+</table>
+ </div>
+</body>

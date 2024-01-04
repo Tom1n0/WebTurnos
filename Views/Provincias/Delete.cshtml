@@ -1,0 +1,27 @@
+﻿@model WebAplicacionTurnos.Models.Provincia
+
+@{
+    ViewData["Title"] = "Eliminar";
+}
+
+<h1>Eliminar</h1>
+
+<h3>¿Está seguro que desea eliminar esta Provincia?</h3>
+<div>
+    <h4>Provincia</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ProvinciaId" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> 
+        <a asp-action="Index" class="btn btn-outline-dark">Volver a la lista</a>
+    </form>
+</div>

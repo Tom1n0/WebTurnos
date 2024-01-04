@@ -1,0 +1,114 @@
+﻿@model WebAplicacionTurnos.Models.ReservaTurno
+
+<style>
+	#calendar {
+		height: 500px;
+		width: 550px;
+	}
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.calendar-container {
+		flex: 0 0 50%; /* Ocupa el 70% del espacio */
+	}
+
+	.dropdown-container {
+		flex: 1; /* Ocupa el espacio restante */
+		padding-left: 20px; /* Espacio entre el calendario y la lista desplegable */
+	}
+</style>
+
+<div class="tab-content">
+	<div id="paso3" class="tab-pane fade show active">
+		<h3>Paso 3: Selección de Fecha y Hora</h3>
+
+		<div class="calendar-container">
+			<div id="calendar"></div>
+		</div>
+
+		<div class="dropdown-container">
+			<dl class="row">
+				<dt class="col-sm-3">
+					<label asp-for="FechaTurno" class="control-label"></label>
+				</dt>
+				<dd class="col-sm-10">
+					<select asp-for="FechaTurno" class="form-control" asp-items="ViewBag.SelectListFechas" id="SelectFechas"></select>
+				</dd>
+				<dt class="col-sm-3">
+					<label asp-for="HoraTurno" class="control-label"></label>
+				</dt>
+				<dd class="col-sm-10">
+					<select asp-for="HoraTurno" class="form-control" asp-items="ViewBag.SelectListHoras" id="SelectHoras"></select>
+				</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+
+<!-- Script para jQuery (necesario para AJAX y el calendario) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- FullCalendar JS -->
+<script src="~/fullcalendar/dist/index.global.min.js"></script>
+
+<!-- FullCalendar JS : Paquete de localización en español -->
+<script src="~/fullcalendar/packages/core/locales/es.global.min.js"></script>
+
+<script>
+	let fechasDisponibles = [];
+
+	// Obtener las fechas antes de inicializar el calendario
+	$.ajax({
+		async: false,  // Esto hará que la petición sea síncrona
+		url: '/Turnos/ObtenerJsonDeFechasDisponiblesFormateadasYYYYMMDDProximos60Dias',
+		data: {
+			año: new Date().getFullYear(),
+			mes: new Date().getMonth() + 1,
+			dia: new Date().getDate()
+		},
+		success: function (data) {
+			fechasDisponibles = data;
+		}
+	});
+
+	document.addEventListener('DOMContentLoaded', function () {
+		var calendarEl = document.getElementById('calendar');
+
+		var calendar = new FullCalendar.Calendar(calendarEl, {
+			headerToolbar: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'dayGridMonth'
+			},
+			aspectRatio: 0.5,
+			locale: 'es',
+			initialView: 'dayGridMonth',
+			selectable: true,
+			select: function (info) {
+				//alert(info.startStr);
+			},
+			dayCellDidMount: function (cellInfo) {
+
+				let fecha = cellInfo.date.toISOString().substring(0, 10);
+				if (fechasDisponibles.includes(fecha)) {
+					cellInfo.el.style.backgroundColor = '#8fdf82';
+				}
+			},
+			dateClick: function (info) {
+				let fecha = info.date.toISOString().substring(0, 10);
+
+				if (fechasDisponibles.includes(fecha)) {
+					var partes = fecha.split('-');
+					var fechaFormateada = partes[2] + '/' + partes[1] + '/' + partes[0];
+					$('#SelectFechas').val(fechaFormateada).change();
+				}
+			}
+		});
+
+		calendar.render();
+	});
+</script>

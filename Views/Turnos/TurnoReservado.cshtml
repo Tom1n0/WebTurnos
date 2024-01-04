@@ -1,0 +1,68 @@
+﻿@model WebAplicacionTurnos.Models.ReservaTurno
+
+@{
+	ViewBag.Title = "Turno Reservado correctamente";
+}
+
+<div class="container mt-5">
+	<div class="row">
+		<div class="col-md-8 offset-md-2">
+			<div class="card shadow">
+				<div class="card-body text-center p-5">
+					<h2 class="card-title text-success mb-4">@ViewBag.Title</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container mt-4">
+	<div class="row">
+		<div class="col-md-6 mb-3">
+			<div class="card">
+				<div class="card-body">
+					<h3 class="card-title">Información del Turno</h3>
+					<p><strong>Fecha del Turno:</strong> @Model.FechaTurno.ToString("dd/MM/yyyy")</p>
+					<p><strong>Hora del Turno:</strong> @Model.HoraTurno</p>
+					<p><strong>Servicio:</strong> @Model.ServicioDescripcion</p>
+					<p><strong>Observación:</strong> @Model.Observacion</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 mb-3">
+			<div class="card">
+				<div class="card-body">
+					<h3 class="card-title">Información del Cliente</h3>
+					<p><strong>Nombre:</strong> @Model.Cliente.Nombre @Model.Cliente.Apellido</p>
+					<p><strong>Documento:</strong> @Model.Cliente.TipoDocumento @Model.Cliente.NumeroDocumento</p>
+					<p><strong>Email:</strong> @Model.Cliente.CorreoElectronico</p>
+					<p><strong>Teléfono:</strong> @Model.Cliente.Celular</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="text-center mt-4">
+	<button id="printButton" onclick="printContent()" class="btn btn-sm btn-secondary mr-2">Imprimir</button>
+	<button id="pdfButton" onclick="saveContent()" class="btn btn-sm btn-secondary mr-2">Guardar como PDF</button>
+</div>
+</div>
+
+<script src="~/jspdf-1.3.2/dist/jspdf.min.js"></script>
+<script>
+	function printContent() {
+		var content = document.getElementById('content').innerHTML;
+		var originalContent = document.body.innerHTML;
+
+		document.body.innerHTML = content;
+		window.print();
+		document.body.innerHTML = originalContent;
+	}
+
+	function saveContent() {
+		var doc = new jsPDF();
+		doc.fromHTML(document.getElementById('content'), 15, 15, { 'width': 170 });
+		doc.save('turno.pdf');
+	}
+</script>

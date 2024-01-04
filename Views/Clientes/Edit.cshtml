@@ -1,0 +1,130 @@
+﻿@model WebAplicacionTurnos.Models.Cliente
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Editar</h1>
+
+<h4>Cliente</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ClienteId" />
+            <div class="form-group">
+                <label asp-for="Apellido" class="control-label"></label>
+                <input asp-for="Apellido" class="form-control" />
+                <span asp-validation-for="Apellido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefono" class="control-label"></label>
+                <input asp-for="Telefono" class="form-control" />
+                <span asp-validation-for="Telefono" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Celular" class="control-label"></label>
+                <input asp-for="Celular" class="form-control" />
+                <span asp-validation-for="Celular" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TipoDocumento" class="control-label"></label>
+                <input asp-for="TipoDocumento" class="form-control" />
+                <span asp-validation-for="TipoDocumento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumeroDocumento" class="control-label"></label>
+                <input asp-for="NumeroDocumento" class="form-control" />
+                <span asp-validation-for="NumeroDocumento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaNacimiento" class="control-label"></label>
+                <input asp-for="FechaNacimiento" class="form-control" />
+                <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CorreoElectronico" class="control-label"></label>
+                <input asp-for="CorreoElectronico" class="form-control" />
+                <span asp-validation-for="CorreoElectronico" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calle" class="control-label"></label>
+                <input asp-for="Calle" class="form-control" />
+                <span asp-validation-for="Calle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Altura" class="control-label"></label>
+                <input asp-for="Altura" class="form-control" />
+                <span asp-validation-for="Altura" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Barrio" class="control-label"></label>
+                <input asp-for="Barrio" class="form-control" />
+                <span asp-validation-for="Barrio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Partido" class="control-label"></label>
+                <input asp-for="Partido" class="form-control" />
+                <span asp-validation-for="Partido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LocalidadId" class="control-label"></label>
+                <select asp-for="LocalidadId" class="form-control" asp-items="ViewBag.LocalidadId"></select>
+                <span asp-validation-for="LocalidadId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProvinciaId" class="control-label"></label>
+                <select asp-for="ProvinciaId" class="form-control" asp-items="ViewBag.ProvinciaId"></select>
+                <span asp-validation-for="ProvinciaId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CuitCuil" class="control-label"></label>
+                <input asp-for="CuitCuil" class="form-control" />
+                <span asp-validation-for="CuitCuil" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RazonSocial" class="control-label"></label>
+                <input asp-for="RazonSocial" class="form-control" />
+                <span asp-validation-for="RazonSocial" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-outline-dark" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-outline-dark">Volver a la lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#ProvinciaId').change(function () {
+            var provinciaId = $(this).val();
+            $.getJSON('/Clientes/ObtenerLocalidadesPorProvincia', { provinciaId: provinciaId }, function (data) {
+                var localidadDropdown = $('#LocalidadId');
+                localidadDropdown.empty();
+                $.each(data, function (index, item) {
+                    localidadDropdown.append($('<option>', {
+                        value: item.localidadId,
+                        text: item.descripcion
+                    }));
+                });
+            });
+        });
+    });
+</script>

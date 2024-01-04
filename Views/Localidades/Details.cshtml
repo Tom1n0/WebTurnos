@@ -1,0 +1,30 @@
+﻿@model WebAplicacionTurnos.Models.Localidad
+
+@{
+    ViewData["Title"] = "Detalles";
+}
+
+<h1>Detalles</h1>
+
+<div>
+    <h4>Localidad</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Provincia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Provincia.ProvinciaId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.LocalidadId" class="btn btn-sm btn-warning">Editar</a> 
+    <a asp-action="Index" class="btn btn-outline-dark">Volver a la lista</a>
+</div>

@@ -1,0 +1,228 @@
+﻿@model WebAplicacionTurnos.Models.ReservaTurno
+
+@{
+	ViewData["Title"] = "Reserva de Turnos";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<!-- Script para jQuery (necesario para AJAX y el calendario) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<div class="container-reserva-turno">
+
+	@* 	<form asp-action="ReservarTurno">
+	<form id="formulario" onsubmit="return false;">*@
+	<form asp-action="ReservarTurno" id="formulario-reserva" onsubmit="return validarEnvio(event)">
+		<input asp-for="ClienteId" type="hidden" />
+		<input asp-for="Cliente" type="hidden" />
+		<input type="hidden" asp-for="Cliente.ClienteId" />
+		<input type="hidden" asp-for="Cliente.LocalidadId" />
+		<input type="hidden" asp-for="Cliente.ProvinciaId" />
+
+		<div id="wizard-container">
+			@Html.Partial("IniciarReservaTurnoPaso1")
+			@Html.Partial("IniciarReservaTurnoPaso2")
+			@Html.Partial("IniciarReservaTurnoPaso3")
+			@Html.Partial("IniciarReservaTurnoPaso4")
+
+			<!-- Botones de Navegación -->
+			<div class="d-flex">
+				<button class="btn btn-secondary" id="btn-anterior">Anterior</button>
+				<button class="btn btn-primary" id="btn-siguiente">Siguiente</button>
+				<input type="submit" value="Reservar turno" class="btn btn-info shadow" id="btn-reservar" />
+			</div>
+		</div>
+
+	</form>
+</div>
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+}
+
+
+<script>
+	// Variables para controlar los pasos
+	var pasoActual = 0;
+	var totalPasos = 4; // Ajusta al número total de pasos en tu formulario
+
+	// Función para mostrar el paso actual
+	function mostrarPaso(paso) {
+		// Ocultar todos los pasos
+		for (var i = 0; i < totalPasos; i++) {
+			document.getElementById('paso' + (i + 1)).style.display = 'none';
+		}
+
+		// Mostrar el paso actual
+		document.getElementById('paso' + (paso + 1)).style.display = 'block';
+
+		// Actualizar la visibilidad de los botones
+		actualizarBotones(paso);
+	}
+
+	// Función para actualizar la visibilidad de los botones
+	function actualizarBotones(paso) {
+		// Ocultar botón 'Anterior' en el primer paso
+		if (paso === 0) {
+			document.getElementById('btn-anterior').style.display = 'none';
+		} else {
+			document.getElementById('btn-anterior').style.display = 'block';
+		}
+
+		// Ocultar botón 'Siguiente' en el último paso
+		if (paso === totalPasos - 1) {
+			document.getElementById('btn-siguiente').style.display = 'none';
+		} else {
+			document.getElementById('btn-siguiente').style.display = 'block';
+		}
+
+		// Mostrar botón 'Reservar' en el último paso
+		if (paso === totalPasos - 1) {
+			document.getElementById('btn-reservar').style.display = 'block';
+		} else {
+			document.getElementById('btn-reservar').style.display = 'none';
+		}
+
+	}
+
+	// Función para ir al siguiente paso
+	function siguientePaso() {
+		if (pasoActual < totalPasos - 1) {
+			// Validación del paso actual antes de avanzar
+			if (validarPaso(pasoActual)) {
+				pasoActual++;
+				mostrarPaso(pasoActual);
+			} else {
+				alert("Por favor, completa todos los campos requeridos.");
+			}
+		}
+	}
+
+	// Función para regresar al paso anterior
+	function pasoAnterior() {
+		if (pasoActual > 0) {
+			pasoActual--;
+			mostrarPaso(pasoActual);
+		}
+	}
+
+	// Función de validación (debes implementar la lógica específica de validación para cada paso)
+	function validarPaso(paso) {
+		// Ejemplo de validación
+		switch (paso) {
+			case 0:
+				// Validación para el paso 1
+				return true; // Asume que la validación es correcta
+			case 1:
+				// Validación para el paso 2
+				return true;
+			case 2:
+				// Validación para el paso 3
+				return true;
+			// Agrega casos para pasos adicionales
+			default:
+				return true;
+		}
+	}
+
+	function validarEnvio(event) {
+		// Obtiene el elemento que inició el evento de envío
+		var elemento = event.submitter;
+
+		// Verifica si el ID del elemento es 'btn-reservar'
+		if (elemento.id === 'btn-reservar') {
+			// Si es el botón 'Reservar turno', permite el envío del formulario
+			return true;
+		}
+
+		// Si no es el botón 'Reservar turno', evita el envío del formulario
+		return false;
+	}
+
+	// Event listeners para los botones
+	document.getElementById('btn-siguiente').addEventListener('click', siguientePaso);
+	document.getElementById('btn-anterior').addEventListener('click', pasoAnterior);
+	document.getElementById('formulario-reserva').addEventListener('submit', validarEnvio);
+
+</script>
+
+<script>
+	$(document).ready(function () {
+		$('#SelectTiposServicios').change(cambiarTipoServicio);
+		$('#SelectServicios').change(cambiarServicio);
+		$('#SelectFechas').change(cambiarFecha);
+		$('#SelectHoras').change(cambiarHora);
+
+		// Actualizar al cargar la página
+		actualizarDescripcion('#SelectTiposServicios', '#TipoServicioDescripcion');
+		actualizarDescripcion('#SelectServicios', '#ServicioDescripcion');
+
+		// Inicializa el wizard mostrando el primer paso
+		mostrarPaso(pasoActual);
+
+	});
+
+	function actualizarDescripcion(selectorDropdown, idCampoTexto) {
+		var textoSeleccionado = $(selectorDropdown + " option").filter(":selected").text();
+		$(idCampoTexto).val(textoSeleccionado);
+	}
+
+	function cambiarTipoServicio() {
+		var tipoServicioId = $(this).val();
+		obtenerServiciosPorTipo(tipoServicioId);
+
+		actualizarDescripcion('#SelectTiposServicios', '#TipoServicioDescripcion');
+	}
+
+	function cambiarServicio() {
+		var servicioId = $(this).val();
+		actualizarDescripcion('#SelectServicios', '#ServicioDescripcion');
+	}
+
+	function cambiarFecha() {
+		var fechaSeleccionada = $(this).val();
+		$('#FechaTurno').val(fechaSeleccionada);
+
+		obtenerHorasLibres(fechaSeleccionada);
+	}
+
+	function cambiarHora() {
+		var horaSeleccionada = $(this).val();
+		$('#HoraTurno').val(horaSeleccionada);
+	}
+
+	function obtenerServiciosPorTipo(tipoServicioId) {
+		$.getJSON('/Turnos/ObtenerJsonServiciosPorTipoServicio', { tipoServicioId: tipoServicioId }, function (data) {
+			var serviciosDropdown = $('#SelectServicios');
+			serviciosDropdown.empty();
+
+			$.each(data, function (index, item) {
+				serviciosDropdown.append($('<option>', {
+					value: item.servicioId,
+					text: item.descripcion,
+					selected: index === 0 // Si es el primer elemento, establece selected en true
+				}));
+			});
+			$('#SelectServicios').trigger('change');
+		});
+	}
+
+	function obtenerHorasLibres(fechaSeleccionada) {
+		$.getJSON('/Turnos/ObtenerHorasDisponiblesDeTurnosFormateadasPorFecha', { fecha: fechaSeleccionada }, function (data) {
+			var horasDropdown = $('#SelectHoras');
+			horasDropdown.empty();
+
+			$.each(data, function (index, hora) {
+				horasDropdown.append($('<option>', {
+					value: hora,
+					text: hora
+				}));
+			});
+			$('#SelectHoras').trigger('change');
+		});
+	}
+
+</script>

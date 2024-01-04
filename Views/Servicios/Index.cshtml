@@ -1,0 +1,75 @@
+﻿@model IEnumerable<WebAplicacionTurnos.Models.Servicio>
+
+@{
+    ViewData["Title"] = "Servicios";
+}
+
+<head>
+
+    <link href="css/tabla.css" rel="stylesheet" />
+</head>
+
+<h1>Servicios</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Agregar nuevo servicio</a>
+</p>
+<body>
+    <div id="main-container">
+<table class="table-servicios">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Precio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Duracion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Observacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoServicio)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duracion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Observacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoServicio.Descripcion)
+            </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.ServicioId" class="btn btn-sm btn-warning" title="Editar">
+                                <i class="fas fa-edit">Editar</i>
+                            </a>
+                            <a asp-action="Details" asp-route-id="@item.ServicioId" class="btn btn-sm btn-info" title="Detalle">
+                                <i class="fas fa-info-circle">Detalle</i>
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.ServicioId" class="btn btn-sm btn-danger" title="Eliminar">
+                                <i class="fas fa-trash">Eliminar</i>
+                            </a>
+                        </td>
+        </tr>
+}
+    </tbody>
+</table>
+    </div>
+</body>
+
