@@ -9,177 +9,177 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebAplicacionTurnos
 build_property.RootNamespace = WebAplicacionTurnos
-build_property.ProjectDir = C:\Users\Pc\Desktop\Todos los Proyecto\NBAShop1\WebTurnosSolucion\WebAplicacionTurnos\
+build_property.ProjectDir = C:\Users\Pc\Desktop\Todos los Proyecto\Baberia\WebTurnosSolucion\WebAplicacionTurnos\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Pc\Desktop\Todos los Proyecto\NBAShop1\WebTurnosSolucion\WebAplicacionTurnos
+build_property.MSBuildProjectDirectory = C:\Users\Pc\Desktop\Todos los Proyecto\Baberia\WebTurnosSolucion\WebAplicacionTurnos
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Clientes/Create.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Clientes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Clientes/Delete.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Clientes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Clientes/Details.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Clientes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Clientes/Edit.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Clientes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Clientes/Index.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Clientes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Clientes/Registrar.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Clientes/Registrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcUmVnaXN0cmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Clientes/RegistroExitoso.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Clientes/RegistroExitoso.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcUmVnaXN0cm9FeGl0b3NvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Home/Index.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Home/Privacy.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Ingreso/Index.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Ingreso/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ncmVzb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Localidades/Create.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Localidades/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxpZGFkZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Localidades/Delete.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Localidades/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxpZGFkZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Localidades/Details.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Localidades/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxpZGFkZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Localidades/Edit.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Localidades/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxpZGFkZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Localidades/Index.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Localidades/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxpZGFkZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Provincias/Create.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Provincias/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmluY2lhc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Provincias/Delete.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Provincias/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmluY2lhc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Provincias/Details.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Provincias/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmluY2lhc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Provincias/Edit.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Provincias/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmluY2lhc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Provincias/Index.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Provincias/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmluY2lhc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Servicios/Create.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Servicios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Servicios/Delete.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Servicios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Servicios/Details.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Servicios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Servicios/Edit.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Servicios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Servicios/Index.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Servicios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Shared/Error.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/TiposServicios/Create.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/TiposServicios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb3NTZXJ2aWNpb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/TiposServicios/Delete.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/TiposServicios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb3NTZXJ2aWNpb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/TiposServicios/Details.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/TiposServicios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb3NTZXJ2aWNpb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/TiposServicios/Edit.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/TiposServicios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb3NTZXJ2aWNpb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/TiposServicios/Index.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/TiposServicios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb3NTZXJ2aWNpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Turnos/GenerarTurnosLibres.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Turnos/GenerarTurnosLibres.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVybm9zXEdlbmVyYXJUdXJub3NMaWJyZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Turnos/IniciarReservaTurno.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Turnos/IniciarReservaTurno.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVybm9zXEluaWNpYXJSZXNlcnZhVHVybm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Turnos/IniciarReservaTurnoPaso1.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Turnos/IniciarReservaTurnoPaso1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVybm9zXEluaWNpYXJSZXNlcnZhVHVybm9QYXNvMS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Turnos/IniciarReservaTurnoPaso2.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Turnos/IniciarReservaTurnoPaso2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVybm9zXEluaWNpYXJSZXNlcnZhVHVybm9QYXNvMi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Turnos/IniciarReservaTurnoPaso3.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Turnos/IniciarReservaTurnoPaso3.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVybm9zXEluaWNpYXJSZXNlcnZhVHVybm9QYXNvMy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Turnos/IniciarReservaTurnoPaso4.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Turnos/IniciarReservaTurnoPaso4.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVybm9zXEluaWNpYXJSZXNlcnZhVHVybm9QYXNvNC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Turnos/TurnoReservado.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Turnos/TurnoReservado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVybm9zXFR1cm5vUmVzZXJ2YWRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/_ViewImports.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/_ViewStart.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pc/Desktop/Todos los Proyecto/NBAShop1/WebTurnosSolucion/WebAplicacionTurnos/Views/Shared/_Layout.cshtml]
+[C:/Users/Pc/Desktop/Todos los Proyecto/Baberia/WebTurnosSolucion/WebAplicacionTurnos/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-j2ggqk3wj6

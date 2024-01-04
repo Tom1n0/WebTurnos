@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pc\\Desktop\\Todos los Proyecto\\NBAShop1\\WebTurnosSolucion\\WebAplicacionTurnos\\WebAplicacionTurnos.csproj": {}
+    "C:\\Users\\Pc\\Desktop\\Todos los Proyecto\\Baberia\\WebTurnosSolucion\\WebAplicacionTurnos\\WebAplicacionTurnos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pc\\Desktop\\Todos los Proyecto\\NBAShop1\\WebTurnosSolucion\\WebAplicacionTurnos\\WebAplicacionTurnos.csproj": {
+    "C:\\Users\\Pc\\Desktop\\Todos los Proyecto\\Baberia\\WebTurnosSolucion\\WebAplicacionTurnos\\WebAplicacionTurnos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pc\\Desktop\\Todos los Proyecto\\NBAShop1\\WebTurnosSolucion\\WebAplicacionTurnos\\WebAplicacionTurnos.csproj",
+        "projectUniqueName": "C:\\Users\\Pc\\Desktop\\Todos los Proyecto\\Baberia\\WebTurnosSolucion\\WebAplicacionTurnos\\WebAplicacionTurnos.csproj",
         "projectName": "WebAplicacionTurnos",
-        "projectPath": "C:\\Users\\Pc\\Desktop\\Todos los Proyecto\\NBAShop1\\WebTurnosSolucion\\WebAplicacionTurnos\\WebAplicacionTurnos.csproj",
+        "projectPath": "C:\\Users\\Pc\\Desktop\\Todos los Proyecto\\Baberia\\WebTurnosSolucion\\WebAplicacionTurnos\\WebAplicacionTurnos.csproj",
         "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pc\\Desktop\\Todos los Proyecto\\NBAShop1\\WebTurnosSolucion\\WebAplicacionTurnos\\obj\\",
+        "outputPath": "C:\\Users\\Pc\\Desktop\\Todos los Proyecto\\Baberia\\WebTurnosSolucion\\WebAplicacionTurnos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
