@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YRiM0xqAAW8FE+4pZtNmKi1xRCpQfOY/msEQVQlNovCR2nNRUQBTgtMf+JBsaUP0JF5N5bJRQj6KwhgJGTJHtA==",
+  "dgSpecHash": "xrzMfwA0l1MMBbBUXUlwBep5tPdNoXR5ZpZZvI1ddLf+YnCUfMOXEeuQnx3KOQC08r+8oiCO/CfYDR7WbzIsrg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pc\\Desktop\\Todos los Proyecto\\Baberia\\WebTurnosSolucion\\WebAplicacionTurnos\\WebAplicacionTurnos.csproj",
+  "projectFilePath": "C:\\Users\\Pc\\Desktop\\Todos los Proyecto\\WebTurnosSolucion\\WebAplicacionTurnos\\WebAplicacionTurnos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pc\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Pc\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
